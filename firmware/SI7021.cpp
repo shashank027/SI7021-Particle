@@ -8,9 +8,9 @@ Updated: Jul 16, 2015: TomWS1:
         fixed 'sizeof' error in _command(), 
         added getTempAndRH() function to simplify calls for C & RH only
 */
-#include "Arduino.h"
+// #include "Arduino.h"
 #include "SI7021.h"
-#include <Wire.h>
+// #include <Wire.h>
 
 #define I2C_ADDR 0x40
 
