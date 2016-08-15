@@ -8,21 +8,21 @@ Updated: Jul 16, 2015: TomWS1: eliminated Byte constants, fixed 'sizeof' error i
 #ifndef si7021_h
 #define si7021_h
 
-#if (ARDUINO >= 100)
- #include "Arduino.h"
-#else
- #include "WProgram.h"
-#endif
+// #if (ARDUINO >= 100)
+// #include "Arduino.h"
+// #else
+// #include "WProgram.h"
+// #endif
 
-#ifdef __AVR_ATtiny85__
- #include "TinyWireM.h"
- #define Wire TinyWireM
-#elif defined(ARDUINO_ARCH_ESP8266)
- #include <Wire.h>
-#else
- #include <avr/pgmspace.h>
- #include <Wire.h>
-#endif
+// #ifdef __AVR_ATtiny85__
+// #include "TinyWireM.h"
+// #define Wire TinyWireM
+// #elif defined(ARDUINO_ARCH_ESP8266)
+// #include <Wire.h>
+// #else
+// #include <avr/pgmspace.h>
+// #include <Wire.h>
+// #endif
 
 typedef struct si7021_env {
     int celsiusHundredths;
